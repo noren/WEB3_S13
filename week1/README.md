@@ -18,7 +18,7 @@ Use the PDF referenced here to go through the process again and get comfortable 
 
 Please reach out with any questions from what we covered today. 
 
-####Homework:#### 
+####Homework:# 
 
 	• I will follow up with instructions for minigroup.
 	• If you do not have a github account please sign up.
