@@ -19,10 +19,10 @@ Use the PDF referenced here to go through the process again and get comfortable 
 
 ####Homework: 
 
-	• I will follow up with instructions for minigroup.
+	• If you did not recieve an invite from me to minigroup please reach out.
 	• If you do not have a github account please sign up.
 	• Destroy the instance we made in class today and rebuild it (to get comfortable with AWS/Linux)
 	• With your new instance publish a simple hello world website using HTML, CSS & Javascript - could be informative, funny or weird.
 	• Send me the url to your instance/hello world site
-	• Reach out with questions, thoughts or concerns
+	
 
