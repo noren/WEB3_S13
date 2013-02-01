@@ -4,7 +4,7 @@ Week One
 Our initial jump into AWS was super successful. You all did did great. 
 Use the PDF referenced here to go through the process again and get comfortable with AWS. 
 
-####What we covered this week:####
+####What we covered this week:
 	
 	• Syllabus & Course Expectations 
 	• What is a server?
