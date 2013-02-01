@@ -16,7 +16,6 @@ Use the PDF referenced here to go through the process again and get comfortable 
 
 [Download the AWS guide from today](https://github.com/piuggi/WEB3_S13/blob/master/week1/AWS_ForBeginners.pdf)
 
-Please reach out with any questions from what we covered today. 
 
 ####Homework: 
 
