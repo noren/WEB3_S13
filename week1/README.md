@@ -6,7 +6,7 @@ Use the PDF referenced here to go through the process again and get comfortable 
 
 What we covered this week:
 	
-	• Syllabus linked here for [download](/Web3_PSAM_5150_A_PIUGGI_S13.pdf/) & Course Expectations
+	• Syllabus & Course Expectations - [Linked here for download](https://github.com/piuggi/WEB3_S13/blob/master/week1/Web3_PSAM_5150_A_PIUGGI_S13.pdf)
 	• What is a server?
 	• What is AWS? What is an Instance?
 	• How do I set up a server?
