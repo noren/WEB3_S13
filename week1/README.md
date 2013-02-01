@@ -4,7 +4,7 @@ Week One
 Our initial jump into AWS was super successful. You all did did great. 
 Use the PDF referenced here to go through the process again and get comfortable with AWS. 
 
-##What we covered this week:##
+####What we covered this week:####
 	
 	• Syllabus & Course Expectations 
 	• What is a server?
@@ -18,7 +18,7 @@ Download the Document from today [here as a PDF](/AWS_ForBeginners.pdf/)
 
 Please reach out with any questions from what we covered today. 
 
-##Homework:## 
+####Homework:#### 
 
 	• I will follow up with instructions for minigroup.
 	• If you do not have a github account please sign up.
