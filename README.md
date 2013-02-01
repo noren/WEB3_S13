@@ -5,7 +5,7 @@
 
 
 
-###Relevant Conversations
+###Relevant Conversation & Updates
 
 Course Dialog will occur on minigroup.
 https://minigroup.com/groups/15110 contact me if you didn't get an invite.
