@@ -12,9 +12,9 @@ Use the PDF referenced here to go through the process again and get comfortable 
 	• How do I set up a server?
 	• Intro to Linux & SSH	
 
-Download the syllabus as a [PDF Linked here for download](Whttps://github.com/piuggi/WEB3_S13/blob/master/week1/Web3_PSAM_5150_A_PIUGGI_S13.pdf)
+[Download the syllabus here](https://github.com/piuggi/WEB3_S13/blob/master/week1/Web3_PSAM_5150_A_PIUGGI_S13.pdf)
 
-Download the Document from today [here as a PDF](/AWS_ForBeginners.pdf/)
+[Download the AWS guide from today](https://github.com/piuggi/WEB3_S13/blob/master/week1/AWS_ForBeginners.pdf)
 
 Please reach out with any questions from what we covered today. 
 
