@@ -13,6 +13,7 @@ What we covered this week:
 	• Intro to Linux & SSH	
 
 Download the syllabus as a [PDF Linked here for download](Whttps://github.com/piuggi/WEB3_S13/blob/master/week1/Web3_PSAM_5150_A_PIUGGI_S13.pdf)
+
 Please reach out with any questions from what we covered today. 
 
 Homework: 
