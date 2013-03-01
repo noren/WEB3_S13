@@ -18,7 +18,7 @@
 			#main article{ padding: 10px; margin: 20px 0; background-color: lightblue; }
 			.Junk-Food {  background-color: orange !important;  }
 			.Healthy-Food{ background-color: green !important; }
-			.On-the-Go{background-color: gray !important;}
+			.On-the-Go{ background-color: gray !important; }
 
 			p.Pixie-Sticks{ font-size: 8em; color: red;}
 			
