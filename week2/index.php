@@ -15,9 +15,9 @@
 
 						$.getJSON("voice.php?callback=?", {text: $('textarea').val() }, //send text to php and get file location back
 
-							function(json){
+							function(json){ //get json from the page
 								console.log('Success');
-								var file = json['audio'];
+								var file = json['audio']; //get audio path
 								$('ul').append('<li>Success - Storing File '+file+'</li>'); //give our user some feedback
 								console.log('Playing Audio')
 								$('ul').append('<li>Playing Audio</li>');
