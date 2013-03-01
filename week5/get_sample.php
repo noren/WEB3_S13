@@ -1,15 +1,13 @@
 <?php 
 	//print_r($_GET);
-	
-	$pages = array( 'home','about','resources');
-	
+	$pages = array( 'home','about','resources');	
 ?>
 
 <!Doctype html>
 <html>
 	<head>
 		<title>Sample Get</title>
-		<?php if($_GET['page'] == 'home'){
+		<?php if($_GET['page'] == 'home'){ //check page for stylesheet
 			
 			$stylesheet = 'homepage';
 			
@@ -18,7 +16,6 @@
 				
 			}
 		?>
-		
 		<link rel="stylesheet" href="css/<?php echo $stylesheet;?>.css">
 	</head>
 	<body>
