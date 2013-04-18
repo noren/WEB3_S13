@@ -1,0 +1,19 @@
+<script>
+			var x = 0;
+			var counter = "Running";
+						
+			function update(){
+				
+				x++;
+				var output = counter+" "+x+" seconds";
+				
+				document.getElementById("content").innerHTML = output;
+								
+			}
+			
+			setInterval(update, 1000);
+			
+			
+</script>
+
+<div id="content">Waiting To Start</div>

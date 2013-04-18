@@ -1,0 +1,17 @@
+<script>
+	var x = 0; //all variables are created by calling var
+	var name = "chris";
+	
+	
+	//functions are called with function
+	function update(){
+		
+		x++;
+		var output = name+" "+x;
+		console.log(output); // send content to the console
+		
+	}
+	
+	setInterval(update, 1000); //run a function on an interval based off millis. 1000 = 1 second
+	
+</script>

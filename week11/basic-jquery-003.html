@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+		<script>
+			
+			$(document).ready(function(){
+				
+				$('div').hide(); //hide all the div elements
+				
+				$('.one').click(function(){
+					$('div.one').show(); //show any div elements with the class of one
+					
+				});
+				
+				$('.two').click(function(){
+					
+					$('div.two').toggle(); //toggle any div elements with the class of two
+					
+				});
+				
+				$('.three').click(function(){
+					
+					$('div.three').slideToggle('slow'); //toggle any div elements with the class of three by sliding them in and out.
+					
+				});
+				
+			});
+			
+			
+		</script>
+		<style>
+			div{ width: 100px; height: 100px; top: 50px; left: 50px; padding: 10px;}
+			div.one{background: red;}
+			div.two{background: blue;}
+			div.three{background: green;}
+		</style>
+	</head>
+	<body>
+		<p class="one">show div one</p>
+		<div class="one"></div>
+		<p class="two">show div two</p>
+		<div class="two"></div>
+		<p class="three">show div three</p>
+		<div class="three"><p>Surprise!</p></div>
+	</body>
+</html>

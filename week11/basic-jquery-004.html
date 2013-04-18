@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+		<script>
+			
+			$(document).ready(function(){
+				
+				$('form').submit(function(e){
+					
+					var name = $('#name'); //set element as var
+					var location = $('#location');
+					var valid = true;
+					
+					
+					if(name.val() == ''){
+						
+						alert("You have No name?");
+						e.preventDefault();
+						valid=false;
+						
+					}else if(name.val() == 'god'){
+						
+						location.val('heaven');
+					}
+					
+					if(location.val() == '' ){
+						
+						alert("You have No Location?");
+						e.preventDefault();
+						valid=false;
+						
+					}else if(location.val() == 'here'){
+						
+						name.val('liar');
+					}	
+					
+				});
+				
+			});
+			
+		</script>
+		<style>
+			div{ width: 100px; height: 100px; top: 50px; left: 50px; padding: 10px;}
+			div.one{background: red;}
+			div.two{background: blue;}
+			div.three{background: green;}
+		</style>
+	</head>
+	<body>
+		
+		<form>
+			<input type="text" id="name" name="name" placeholder="name">
+			<input type="text" id="location" name="location" placeholder="location">
+			<input type="submit" value="enter">
+		</form>
+
+	</body>
+</html>

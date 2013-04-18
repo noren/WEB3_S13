@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<script>
+			var x = 0;
+			
+			function move(){
+				x++;
+				document.getElementById('box').style.left = x+'px';
+				
+			}
+			
+			setInterval(move, 1000/5); //move every 5 times every second
+			
+		</script>
+		<style>
+			#box{ width: 100px; height: 100px; position: absolute; top: 0px; left: 0px; background: red;}
+		</style>
+	</head>
+	<body>
+		<div id="box"></div>
+	</body>
+</html>
