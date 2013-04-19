@@ -4,10 +4,11 @@
 		<script>
 			
 			$(document).ready(function(){
-				
+
 				$('div').hide(); //hide all the div elements
 				
 				$('.one').click(function(){
+					
 					$('div.one').show(); //show any div elements with the class of one
 					
 				});
@@ -20,7 +21,7 @@
 				
 				$('.three').click(function(){
 					
-					$('div.three').slideToggle('slow'); //toggle any div elements with the class of three by sliding them in and out.
+					$('div.three').slideToggle(10000); //toggle any div elements with the class of three by sliding them in and out.
 					
 				});
 				
@@ -29,7 +30,11 @@
 			
 		</script>
 		<style>
-			div{ width: 100px; height: 100px; top: 50px; left: 50px; padding: 10px;}
+			div{ width: 100px; 
+				 height: 100px; 
+				 top: 50px; 
+				 left: 50px; 
+				 padding: 10px;}
 			div.one{background: red;}
 			div.two{background: blue;}
 			div.three{background: green;}

@@ -1,19 +1,32 @@
-<script>
+<script type="text/javascript">
 			var x = 0;
 			var counter = "Running";
+			var l = x;
 						
 			function update(){
 				
-				x++;
+				x++; //x+=1; //x=x+1;
 				var output = counter+" "+x+" seconds";
-				
+				l = x*2;
+				document.getElementById("example").innerHTML = "<p>"+l+"</p>";
 				document.getElementById("content").innerHTML = output;
-								
+				
+			}
+			
+			function draw() {
+				
+				l*=4;
+				document.getElementById("s").innerHTML = l;
+				
 			}
 			
 			setInterval(update, 1000);
-			
+			setInterval(draw, 250);
 			
 </script>
 
 <div id="content">Waiting To Start</div>
+<div id="example">Here is an example</div>
+<p id="s">Waiting...</p>
+
+

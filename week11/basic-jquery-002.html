@@ -4,19 +4,21 @@
 		<script>
 			
 			$(document).ready(function(){ //an initializer for when the page loads
-				
+					
 				$('p').html("I am a paragraph."); 
 				$('#one').append(" I have an ID named #one, and this content is appended.");
 				$('.two').prepend("I have a CLASS named .two, and this content is prepended. ");
 				$('.three').append(" Click on me to see an event!");
-		
-		
+
 				$('.three').click(function(){
 				
 					$(this).html("Oops. I have been overwritten with the HTML Function.");
 
-				
 				});
+				
+				
+				var contentInDiv= $('.three').html();
+				console.log(contentInDiv);
 		
 			});
 			
