@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+		<script type="text/javascript">
+		
+			$(document).ready(function(){
+				$('form').submit(function(e){
+					
+					e.preventDefault();
+					
+					var val = $('#data').val();
+					
+					$.ajax({
+						
+						type: "POST",
+						url:"file.php",
+						data: "name="+val
+					}).done(function(){
+						
+						alert('Sent Data '+ val);
+					});
+					
+				});
+				
+			});
+		
+		
+		</script>
+	</head>
+	<body>
+		<form>
+			<input id="data" type="text" name="data">
+			<input type="submit" value="AJAX">
+		</form>
+	</body>
+</html>
