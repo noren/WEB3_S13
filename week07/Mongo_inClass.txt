@@ -1,0 +1,281 @@
+$ git --version\
+git version 1.7.9.5\
+user@ip-10-4-46-171:~$ mongo\
+MongoDB shell version: 2.0.4\
+connecting to: test\
+> exit\
+bye\
+user@ip-10-4-46-171:~$ mongo\
+MongoDB shell version: 2.0.4\
+connecting to: test\
+> a =  10*2.5\
+25\
+> for(i = 0; i< 10; i++)\{ print('hello '+i);  \}\
+hello 0\
+hello 1\
+hello 2\
+hello 3\
+hello 4\
+hello 5\
+hello 6\
+hello 7\
+hello 8\
+hello 9\
+> a = (32/4)*4\
+32\
+> var n = \{name: 'Ed', languages: ['c', 'ruby', 'js']\};\
+> var n = \{name: 'Ed', languages: ['c', 'ruby', 'js']\}; print(n);\
+[object Object]\
+> print(n);\
+[object Object]\
+> print(n.name)\
+Ed\
+> print(n.languages)\
+c,ruby,js\
+> print(n['languages'])\
+c,ruby,js\
+> exit\
+bye\
+user@ip-10-4-46-171:~$ mongo\
+MongoDB shell version: 2.0.4\
+connecting to: test\
+> print(n.languages)\
+Fri Mar 15 00:48:25 ReferenceError: n is not defined (shell):1\
+> var n = \{name: 'Ed', languages: ['c', 'ruby', 'js']\};\
+> print(n);\
+[object Object]\
+> db.persons.save(n);\
+> db.persons.find();\
+\{ "_id" : ObjectId("51427039b413cde7c8b30550"), "name" : "Ed", "languages" : [ "c", "ruby", "js" ] \}\
+> exit\
+bye\
+user@ip-10-4-46-171:~$ mongo\
+MongoDB shell version: 2.0.4\
+connecting to: test\
+> db.persons.find()\
+\{ "_id" : ObjectId("51427039b413cde7c8b30550"), "name" : "Ed", "languages" : [ "c", "ruby", "js" ] \}\
+> for(i=0; i< 100; i++)\{ db.score.save( \{ score: i, session: 4  \});  \}\
+> db.score.find()\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f13"), "score" : 0, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f14"), "score" : 1, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f15"), "score" : 2, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f16"), "score" : 3, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f17"), "score" : 4, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f18"), "score" : 5, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f19"), "score" : 6, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f1a"), "score" : 7, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f1b"), "score" : 8, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f1c"), "score" : 9, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f1d"), "score" : 10, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f1e"), "score" : 11, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f1f"), "score" : 12, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f20"), "score" : 13, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f21"), "score" : 14, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f22"), "score" : 15, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f23"), "score" : 16, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f24"), "score" : 17, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f25"), "score" : 18, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f26"), "score" : 19, "session" : 4 \}\
+has more\
+> db.score.count()\
+100\
+> db.score.find()\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f13"), "score" : 0, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f14"), "score" : 1, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f15"), "score" : 2, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f16"), "score" : 3, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f17"), "score" : 4, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f18"), "score" : 5, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f19"), "score" : 6, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f1a"), "score" : 7, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f1b"), "score" : 8, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f1c"), "score" : 9, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f1d"), "score" : 10, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f1e"), "score" : 11, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f1f"), "score" : 12, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f20"), "score" : 13, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f21"), "score" : 14, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f22"), "score" : 15, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f23"), "score" : 16, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f24"), "score" : 17, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f25"), "score" : 18, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f26"), "score" : 19, "session" : 4 \}\
+has more\
+> db.score.count()\
+100\
+> i=0; i< 200; i++)\{ db.score.save( \{ score: i, session: 5, completed: true \});\
+> db.score.count()\
+300\
+> db.score.find()\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f13"), "score" : 0, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f14"), "score" : 1, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f15"), "score" : 2, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f16"), "score" : 3, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f17"), "score" : 4, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f18"), "score" : 5, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f19"), "score" : 6, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f1a"), "score" : 7, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f1b"), "score" : 8, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f1c"), "score" : 9, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f1d"), "score" : 10, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f1e"), "score" : 11, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f1f"), "score" : 12, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f20"), "score" : 13, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f21"), "score" : 14, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f22"), "score" : 15, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f23"), "score" : 16, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f24"), "score" : 17, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f25"), "score" : 18, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f26"), "score" : 19, "session" : 4 \}\
+has more\
+> db.score.find()\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f13"), "score" : 0, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f14"), "score" : 1, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f15"), "score" : 2, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f16"), "score" : 3, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f17"), "score" : 4, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f18"), "score" : 5, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f19"), "score" : 6, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f1a"), "score" : 7, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f1b"), "score" : 8, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f1c"), "score" : 9, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f1d"), "score" : 10, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f1e"), "score" : 11, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f1f"), "score" : 12, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f20"), "score" : 13, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f21"), "score" : 14, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f22"), "score" : 15, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f23"), "score" : 16, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f24"), "score" : 17, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f25"), "score" : 18, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f26"), "score" : 19, "session" : 4 \}\
+has more\
+> db.score.find(\{ session: 5 \})\
+\{ "_id" : ObjectId("514271406a3db9b769813f77"), "score" : 0, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813f78"), "score" : 1, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813f79"), "score" : 2, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813f7a"), "score" : 3, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813f7b"), "score" : 4, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813f7c"), "score" : 5, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813f7d"), "score" : 6, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813f7e"), "score" : 7, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813f7f"), "score" : 8, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813f80"), "score" : 9, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813f81"), "score" : 10, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813f82"), "score" : 11, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813f83"), "score" : 12, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813f84"), "score" : 13, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813f85"), "score" : 14, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813f86"), "score" : 15, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813f87"), "score" : 16, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813f88"), "score" : 17, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813f89"), "score" : 18, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813f8a"), "score" : 19, "session" : 5, "completed" : true \}\
+has more\
+> db.score.count()\
+300\
+> db.score.find(\{ session: 4 \})\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f13"), "score" : 0, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f14"), "score" : 1, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f15"), "score" : 2, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f16"), "score" : 3, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f17"), "score" : 4, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f18"), "score" : 5, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f19"), "score" : 6, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f1a"), "score" : 7, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f1b"), "score" : 8, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f1c"), "score" : 9, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f1d"), "score" : 10, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f1e"), "score" : 11, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f1f"), "score" : 12, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f20"), "score" : 13, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f21"), "score" : 14, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f22"), "score" : 15, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f23"), "score" : 16, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f24"), "score" : 17, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f25"), "score" : 18, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f26"), "score" : 19, "session" : 4 \}\
+has more\
+> db.score.find(\{ complted: true \})\
+> db.score.find(\{ completed: true \})\
+\{ "_id" : ObjectId("514271406a3db9b769813f77"), "score" : 0, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813f78"), "score" : 1, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813f79"), "score" : 2, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813f7a"), "score" : 3, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813f7b"), "score" : 4, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813f7c"), "score" : 5, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813f7d"), "score" : 6, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813f7e"), "score" : 7, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813f7f"), "score" : 8, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813f80"), "score" : 9, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813f81"), "score" : 10, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813f82"), "score" : 11, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813f83"), "score" : 12, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813f84"), "score" : 13, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813f85"), "score" : 14, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813f86"), "score" : 15, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813f87"), "score" : 16, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813f88"), "score" : 17, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813f89"), "score" : 18, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813f8a"), "score" : 19, "session" : 5, "completed" : true \}\
+has more\
+> db.score.find(\{score: \{'$gt': 90 \} \})\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f6e"), "score" : 91, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f6f"), "score" : 92, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f70"), "score" : 93, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f71"), "score" : 94, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f72"), "score" : 95, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f73"), "score" : 96, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f74"), "score" : 97, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f75"), "score" : 98, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f76"), "score" : 99, "session" : 4 \}\
+\{ "_id" : ObjectId("514271406a3db9b769813fd2"), "score" : 91, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813fd3"), "score" : 92, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813fd4"), "score" : 93, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813fd5"), "score" : 94, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813fd6"), "score" : 95, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813fd7"), "score" : 96, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813fd8"), "score" : 97, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813fd9"), "score" : 98, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813fda"), "score" : 99, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813fdb"), "score" : 100, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813fdc"), "score" : 101, "session" : 5, "completed" : true \}\
+has more\
+> db.score.find(\{score: \{'$gt':70, '$lte':75 \} \})\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f5a"), "score" : 71, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f5b"), "score" : 72, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f5c"), "score" : 73, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f5d"), "score" : 74, "session" : 4 \}\
+\{ "_id" : ObjectId("514270cf6a3db9b769813f5e"), "score" : 75, "session" : 4 \}\
+\{ "_id" : ObjectId("514271406a3db9b769813fbe"), "score" : 71, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813fbf"), "score" : 72, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813fc0"), "score" : 73, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813fc1"), "score" : 74, "session" : 5, "completed" : true \}\
+\{ "_id" : ObjectId("514271406a3db9b769813fc2"), "score" : 75, "session" : 5, "completed" : true \}\
+> db.users.save(\{name: 'Johnny', languages: ['ruby', 'c']\});\
+> db.users.save(\{name: 'Sue', languages: ['scala', 'lisp']\}); \
+> db.users.find()\
+\{ "_id" : ObjectId("514273e66a3db9b76981403f"), "name" : "Johnny", "languages" : [ "ruby", "c" ] \}\
+\{ "_id" : ObjectId("514273ee6a3db9b769814040"), "name" : "Sue", "languages" : [ "scala", "lisp" ] \}\
+> db.users.update(\{name: "Johnny"\}, \{name:"cash", languages: [english]  \})\
+Fri Mar 15 01:07:46 ReferenceError: english is not defined (shell):1\
+> db.users.update(\{name: "Johnny"\}, \{name:"cash", languages: ['english']  \})\
+> db.users.find()\
+\{ "_id" : ObjectId("514273e66a3db9b76981403f"), "name" : "cash", "languages" : [ "english" ] \}\
+\{ "_id" : ObjectId("514273ee6a3db9b769814040"), "name" : "Sue", "languages" : [ "scala", "lisp" ] \}\
+> db.users.update(\{name: "Johnny"\}, \{'$set':\{ name: "Johnny" \} \})\
+> db.users.find()\
+\{ "_id" : ObjectId("514273e66a3db9b76981403f"), "name" : "cash", "languages" : [ "english" ] \}\
+\{ "_id" : ObjectId("514273ee6a3db9b769814040"), "name" : "Sue", "languages" : [ "scala", "lisp" ] \}\
+> db.users.update(\{name: "Johnny"\}, \{'$set':\{"name": "Johnny" \} \})\
+> db.users.find()\
+\{ "_id" : ObjectId("514273e66a3db9b76981403f"), "name" : "cash", "languages" : [ "english" ] \}\
+\{ "_id" : ObjectId("514273ee6a3db9b769814040"), "name" : "Sue", "languages" : [ "scala", "lisp" ] \}\
+> db.users.update(\{name: "Johnny"\}, \{'$set':\{"update": "info" \} \})\
+> db.users.find()\
+\{ "_id" : ObjectId("514273e66a3db9b76981403f"), "name" : "cash", "languages" : [ "english" ] \}\
+\{ "_id" : ObjectId("514273ee6a3db9b769814040"), "name" : "Sue", "languages" : [ "scala", "lisp" ] \}\
+> db.score.remove()\
+> db.users.remove(\{ "name": "Sue" \})\
+> db.users.find()\
+\{ "_id" : ObjectId("514273e66a3db9b76981403f"), "name" : "cash", "languages" : [ "english" ] \}}
